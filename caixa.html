@@ -7,118 +7,164 @@
     <title>caixas </title>
     <style>
         html {
-            background-color: hsl(313, 65%, 85%); 
-            height: 100%; 
-            margin: 0; 
-            padding: 0; 
+            background-color: hsl(313, 65%, 85%);
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
 
-     #topBox{
-/* width: 250px;
+        #topBox {
+            /* width: 250px;
 height: 250px; */
-border: 9px solid hsl(313, 65%, 85%); ;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}    
-#BottomBox{
-width: 300px;
-height: 200px;
-background-color: rgb(253, 0, 0);
-border-radius: 10px;
-margin-left: 180px;
-}
+            border: 9px solid hsl(313, 65%, 85%);
+            ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #BottomBox {
+            width: 260px;
+            height: 200px;
+            background-color: rgb(253, 0, 0);
+            border-radius: 10px;
+            margin-left: 300px;
+        }
 
 
 
-.Circle{
+        .Circle {
             width: 150px;
             height: 150px;
-            background: radial-gradient(circle, #450649, #a223a7); 
-            border-radius: 50%; 
+            background: radial-gradient(circle, #450649, #a223a7);
+            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-}   
-.Alinhar{
-    display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}    
-.bnt-style{ 
-    width: 100px;
-    height: 25px;
-    background-color:rgb(190, 74, 146);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    color: rgb(14, 13, 14);
-    margin-right: 15px;
-}
-.container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
 
-}
-   
+        }
 
-.input-caixa {
-            width: 300px;
-            height: 80px;
+        .Alinhar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bnt-style {
+            width: 100px;
+            height: 25px;
+            background-color: rgb(190, 74, 146);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            color: rgb(14, 13, 14);
+            margin-right: 15px;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+
+        .input-caixa {
+            width: 80px;
+            height: 400px;
             border: 20px solid #f10095;
             box-sizing: border-box;
             padding: 60px;
-            background-color:#f10095;
+            background-color: #f10095;
             border-radius: 10px;
-            margin:15px ;
-            margin-left: 180px;
+            margin: 15px;
+            margin-left: 550px;
         }
+
         .caixa {
             width: 200px;
             height: 150px;
             border: 20px solid #27022b;
             box-sizing: border-box;
-            padding: 30px;
             margin: 20px;
-            background-color:#27022b;
-            border-radius: 10px; 
-        
+            background-color: #27022b;
+            border-radius: 10px;
+            margin-left: 250px;
+        }
+
+        .quadrado {
+            width: 150px;
+            height: 150px;
+            border: 20px solid #3700ff;
+            box-sizing: border-box;
+            margin: 20px;
+            background-color: #3700ff;
+            border-radius: 10px;
+            margin-left: 250px;
+        }
+
+        .box {  
+            width: 250px;
+            height: 150px;
+            border: 20px solid #ff00d4;
+            box-sizing: border-box;
+            margin: 20px;
+            background-color: #ff00d4;
+            border-radius: 10px;
+            margin-left: 300px;
+
+
         }
 
     </style>
 </head>
+
 <body>
 
     <div id="topBox">
-<div class="Circle"></div>
-    <div class="alinhar"> 
-        <h1>Isadora</h1>
-        <p>Student, brasilian</p> </div>
+        <div class="Circle"></div>
+        <div class="alinhar">
+            <h1>Isadora</h1>
+            <p>Student, brasilian</p>
+        </div>
         <div class="container">
 
-        <a href="https://portal.educacaoadventista.org.br" class="bnt-style"> <p>Eclass</p></a>      
-        <a href="https://github.com/isadorabarboza/hmtl" class="bnt-style"> <p>GitHub</p></a>
-    
+            <a href="https://portal.educacaoadventista.org.br" class="bnt-style">
+                <p>Eclass</p>
+            </a>
+            <a href="https://github.com/isadorabarboza/hmtl" class="bnt-style">
+                <p>GitHub</p>
+            </a>
+
         </div>
-        </div>
+    </div>
 
     </div>
-<div>
+
     <div id="BottomBox">
-    <div id="input-caixa"></div>
+        <div id="primeiracoluna">
+            <div id="input-caixa" type="input" class="input-caixa">
+            </div>
+
+            <div class="quadrado">
+            </div>
+        </div>
+        <div id="segundacoluna">
+
+            <div class="caixa"
+                class="quadrado">
+                </div>
+
+            </div>
+        </div>
+        <div id="terceiraacoluna">
+
+            <div class="box">
+            </div>
+        </div>
     </div>
-
-</div>
-    </div>
-
-        <div><input type="input" class="input-caixa"></div>
-        <div class="caixa"> </div>
-        <div class="alinhar">
-</div>
-
 </body>
